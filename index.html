@@ -9,354 +9,499 @@
 </head>
 
 <body class="bg-black text-[#e2e3e4]">
-    <header class="w-[31%] h-screen fixed flex justify-end">
-        <div class="w-[300px] ml-auto flex flex-col justify-between h-full px-2">
-            <div class="top">
-                <div class="logo p-4 transition duration-300 ease-in-out hover:bg-gray-900 size-16 rounded-full">
-                    <img src="src/images/x.svg" alt="logo" class="invert cursor-pointer">
+    <div class="flex w-[90%] m-auto">
+        <header class="w-[13%] xl:w-[31%] flex">
+            <div class="w-[300px] ml-auto flex flex-col gap-8 h-full px-2">
+                <div class="top flex flex-col items-end xl:items-start">
+                    <div class="logo p-4 transition duration-300 ease-in-out hover:bg-gray-900 size-16 rounded-full">
+                        <img src="src/images/x.svg" alt="logo" class="invert cursor-pointer">
+                    </div>
+                    <nav class="menu text-xl">
+                        <ul>
+                            <li class="cursor-pointer flex">
+                                <div
+                                    class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
+                                    <img src="src/images/nav/home.svg" alt="home" class="invert w-7"><span
+                                        class="mx-5 hidden xl:block font-bold">Home</span>
+                                </div>
+                            </li>
+                            <li class="cursor-pointer flex">
+                                <div
+                                    class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
+                                    <img src="src/images/nav/explore.svg" alt="explore" class="invert w-7"><span
+                                        class="mx-5 hidden xl:block">Explore</span>
+                                </div>
+                            </li>
+                            <li class="cursor-pointer flex">
+                                <div
+                                    class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
+                                    <img src="src/images/nav/notifications.svg" alt="notifications"
+                                        class="invert w-7"><span class="mx-5 hidden xl:block">Notifications</span>
+                                </div>
+                            </li>
+                            <li class="cursor-pointer flex">
+                                <div
+                                    class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
+                                    <img src="src/images/nav/messages.svg" alt="messages" class="invert w-7"><span
+                                        class="mx-5 hidden xl:block">Messages</span>
+                                </div>
+                            </li>
+                            <li class="cursor-pointer flex">
+                                <div
+                                    class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
+                                    <img src="src/images/nav/grok.svg" alt="grok" class="invert w-7"><span
+                                        class="mx-5 hidden xl:block">Grok</span>
+                                </div>
+                            </li>
+                            <li class="cursor-pointer flex">
+                                <div
+                                    class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
+                                    <img src="src/images/nav/bookmarks.svg" alt="bookmarks" class="invert w-7"><span
+                                        class="mx-5 hidden xl:block">Bookmarks</span>
+                                </div>
+                            </li>
+                            <li class="cursor-pointer flex">
+                                <div
+                                    class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
+                                    <img src="src/images/nav/jobs.svg" alt="jobs" class="invert w-7"><span
+                                        class="mx-5 hidden xl:block">Jobs</span>
+                                </div>
+                            </li>
+                            <li class="cursor-pointer flex">
+                                <div
+                                    class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
+                                    <img src="src/images/nav/communities.svg" alt="communities" class="invert w-7"><span
+                                        class="mx-5 hidden xl:block">Communities</span>
+                                </div>
+                            </li>
+                            <li class="cursor-pointer flex">
+                                <div
+                                    class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
+                                    <img src="src/images/nav/premium.svg" alt="premium" class="invert w-7"><span
+                                        class="mx-5 hidden xl:block">Premium</span>
+                                </div>
+                            </li>
+                            <li class="cursor-pointer flex">
+                                <div
+                                    class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
+                                    <img src="src/images/nav/verifies-orgs.svg" alt="verifies-orgs"
+                                        class="invert w-7"><span class="mx-5 hidden xl:block">Verifies Orgs</span>
+                                </div>
+                            </li>
+                            <li class="cursor-pointer flex">
+                                <div
+                                    class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
+                                    <img src="src/images/nav/profile.svg" alt="profile" class="invert w-7"><span
+                                        class="mx-5 hidden xl:block">Profile</span>
+                                </div>
+                            </li>
+                            <li class="cursor-pointer flex">
+                                <div
+                                    class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
+                                    <img src="src/images/nav/more.svg" alt="more" class="invert w-7"><span
+                                        class="mx-5 hidden xl:block">More</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="post-button">
+                        <button
+                            class="bg-[#1d9bf0] transition duration-300 ease-in-out hover:bg-[#1a8cd8] p-3 mt-2 text-lg font-bold rounded-full">
+                            <img src="src/images/nav/post.svg" alt="post" class="invert w-7 xl:hidden">
+                            <span class="hidden xl:block w-56">Post</span>
+                        </button>
+                    </div>
                 </div>
-                <nav class="menu text-xl">
-                    <ul>
-                        <li class="cursor-pointer flex">
-                            <div class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
-                                <img src="src/images/nav/home.svg" alt="home" class="invert w-7"><span
-                                    class="mx-5 font-bold">Home</span>
-                            </div>
-                        </li>
-                        <li class="cursor-pointer flex">
-                            <div class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
-                                <img src="src/images/nav/explore.svg" alt="explore" class="invert w-7"><span
-                                    class="mx-5">Explore</span>
-                            </div>
-                        </li>
-                        <li class="cursor-pointer flex">
-                            <div class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
-                                <img src="src/images/nav/notifications.svg" alt="notifications" class="invert w-7"><span
-                                    class="mx-5">Notifications</span>
-                            </div>
-                        </li>
-                        <li class="cursor-pointer flex">
-                            <div class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
-                                <img src="src/images/nav/messages.svg" alt="messages" class="invert w-7"><span
-                                    class="mx-5">Messages</span>
-                            </div>
-                        </li>
-                        <li class="cursor-pointer flex">
-                            <div class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
-                                <img src="src/images/nav/grok.svg" alt="grok" class="invert w-7"><span
-                                    class="mx-5">Grok</span>
-                            </div>
-                        </li>
-                        <li class="cursor-pointer flex">
-                            <div class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
-                                <img src="src/images/nav/bookmarks.svg" alt="bookmarks" class="invert w-7"><span
-                                    class="mx-5">Bookmarks</span>
-                            </div>
-                        </li>
-                        <li class="cursor-pointer flex">
-                            <div class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
-                                <img src="src/images/nav/jobs.svg" alt="jobs" class="invert w-7"><span
-                                    class="mx-5">Jobs</span>
-                            </div>
-                        </li>
-                        <li class="cursor-pointer flex">
-                            <div class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
-                                <img src="src/images/nav/communities.svg" alt="communities" class="invert w-7"><span
-                                    class="mx-5">Communities</span>
-                            </div>
-                        </li>
-                        <li class="cursor-pointer flex">
-                            <div class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
-                                <img src="src/images/nav/premium.svg" alt="premium" class="invert w-7"><span
-                                    class="mx-5">Premium</span>
-                            </div>
-                        </li>
-                        <li class="cursor-pointer flex">
-                            <div class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
-                                <img src="src/images/nav/verifies-orgs.svg" alt="verifies-orgs" class="invert w-7"><span
-                                    class="mx-5">Verifies Orgs</span>
-                            </div>
-                        </li>
-                        <li class="cursor-pointer flex">
-                            <div class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
-                                <img src="src/images/nav/profile.svg" alt="profile" class="invert w-7"><span
-                                    class="mx-5">Profile</span>
-                            </div>
-                        </li>
-                        <li class="cursor-pointer flex">
-                            <div class="transition duration-300 ease-in-out hover:bg-gray-900 rounded-full flex p-4">
-                                <img src="src/images/nav/more.svg" alt="more" class="invert w-7"><span
-                                    class="mx-5">More</span>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="post-button">
-                    <button
-                        class="w-11/12 bg-[#1d9bf0] transition duration-300 ease-in-out hover:bg-[#1a8cd8] p-3 mt-2 text-lg font-bold rounded-full">Post</button>
+                <div
+                    class="bottom flex items-center justify-end xl:justify-between p-3 mb-2 transition duration-300 ease-in-out hover:bg-gray-900 rounded-full cursor-pointer xl:pr-4">
+                    <div class="user-info flex gap-3">
+                        <div class="profile-picture size-12 rounded-full bg-slate-400 overflow-hidden">
+                            <img src="src/images/my-image.png" alt="Profile Picture" class="object-cover">
+                        </div>
+                        <div class="username hidden xl:block">
+                            <div class="font-bold flex items-end">Trilok Chaudhary <span><img
+                                        src="src/images/activate.svg" alt="activate" class="w-5 ml-1"></span> </div>
+                            <span class="text-gray-500">@Tricch</span>
+                        </div>
+                    </div>
+                    <div class="more-horiz">
+                        <img src="src/images/more-horiz.svg" alt="more-horiz" class="invert w-7 hidden xl:block">
+                    </div>
                 </div>
             </div>
-            <div
-                class="bottom flex items-center justify-between p-3 mb-2 transition duration-300 ease-in-out hover:bg-gray-900 rounded-full cursor-pointer">
-                <div class="user-info flex gap-3">
+        </header>
+
+        <main class="flex">
+            <div class="content border-x-[1px] border-gray-700 w-[600px]">
+                <div class="tabbar flex h-[54px]">
+                    <div
+                        class="for-you transition duration-300 ease-in-out hover:bg-gray-950 font-bold w-1/2 flex justify-center cursor-pointer">
+                        <div class="box w-fit flex flex-col">
+                            <div class="h-12 flex items-center">For you</div>
+                            <div class="h-1 bg-blue-700 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div
+                        class="following transition duration-300 ease-in-out text-gray-500 hover:bg-gray-950 w-1/2 flex justify-center cursor-pointer">
+                        <div class="h-full flex items-center">Following</div>
+                    </div>
+                </div>
+
+                <div class="whatishappening border-t-2 border-gray-700 px-4 pt-4 flex justify-between">
                     <div class="profile-picture size-12 rounded-full bg-slate-400 overflow-hidden">
                         <img src="src/images/my-image.png" alt="Profile Picture" class="object-cover">
                     </div>
-                    <div class="username flex flex-col">
-                        <div class="font-bold flex items-end">Trilok Chaudhary <span><img src="src/images/activate.svg"
-                                    alt="activate" class="w-5 ml-1"></span> </div>
-                        <span class="text-gray-500">@Tricch</span>
-                    </div>
-                </div>
-                <div class="more-horiz">
-                    <img src="src/images/more-horiz.svg" alt="more-horiz" class="invert w-7">
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main class="ml-[31%] flex gap-8">
-        <div class="content border-x-[1px] border-gray-700 w-[45%] h-[300vh]">
-            <div class="tabbar flex h-[54px] border-b-2 border-gray-700">
-                <div
-                    class="for-you transition duration-300 ease-in-out hover:bg-gray-900 font-bold w-1/2 flex justify-center cursor-pointer">
-                    <div class="box w-fit flex flex-col">
-                        <div class="h-12 flex items-center">For you</div>
-                        <div class="h-1 bg-blue-700 rounded-full"></div>
-                    </div>
-                </div>
-                <div
-                    class="following transition duration-300 ease-in-out text-gray-500 hover:bg-gray-900 w-1/2 flex justify-center cursor-pointer">
-                    <div class="h-full flex items-center">Following</div>
-                </div>
-            </div>
-
-            <div class="whatishappening border-b-2 border-gray-700 px-4 pt-4 flex justify-between">
-                <div class="profile-picture size-12 rounded-full bg-slate-400 overflow-hidden">
-                    <img src="src/images/my-image.png" alt="Profile Picture" class="object-cover">
-                </div>
-                <div class="form w-[92%]">
-                    <form action="#">
-                        <input type="text" placeholder="What is happening?!" required
-                            class="w-full p-2 bg-transparent text-xl placeholder:text-gray-500 focus:outline-none">
-                        <div class="button border-b border-gray-700">
-                            <button type="button"
-                                class="px-2 my-2 mb-4 rounded-full flex items-center text-[#1d9bf0] hover:bg-gray-800">
-                                <img src="src/images/globe.svg" alt="globe" class="w-4 mr-1">
-                                <span>Everyone can reply</span>
-                            </button>
-                        </div>
-                        <div class="bottom flex justify-between items-center">
-                            <div class="medias py-2 flex">
-                                <div
-                                    class="file transition duration-300 ease-in-out p-2 hover:bg-gray-900 rounded-full">
-                                    <input type="file" id="media" class="hidden">
-                                    <label for="media" class="cursor-pointer"><img src="src/images/medias/media.svg"
-                                            alt="media" class="w-5"></label>
+                    <div class="form w-[92%]">
+                        <form action="#">
+                            <input type="text" placeholder="What is happening?!" required
+                                class="w-full p-2 bg-transparent text-xl placeholder:text-gray-500 focus:outline-none">
+                            <div class="button border-b border-gray-700">
+                                <button type="button"
+                                    class="px-2 my-2 mb-4 rounded-full flex items-center text-[#1d9bf0] hover:bg-gray-800">
+                                    <img src="src/images/globe.svg" alt="globe" class="w-4 mr-1">
+                                    <span>Everyone can reply</span>
+                                </button>
+                            </div>
+                            <div class="bottom flex justify-between items-center">
+                                <div class="medias py-2 flex">
+                                    <div
+                                        class="file transition duration-300 ease-in-out p-2 hover:bg-gray-900 rounded-full">
+                                        <input type="file" id="media" class="hidden">
+                                        <label for="media" class="cursor-pointer"><img src="src/images/medias/media.svg"
+                                                alt="media" class="w-5"></label>
+                                    </div>
+                                    <div
+                                        class="gif transition duration-300 ease-in-out p-2 hover:bg-gray-900 rounded-full cursor-pointer">
+                                        <img src="src/images/medias/gif.svg" alt="gif" class="w-5">
+                                    </div>
+                                    <div
+                                        class="poll transition duration-300 ease-in-out p-2 hover:bg-gray-900 rounded-full cursor-pointer">
+                                        <img src="src/images/medias/poll.svg" alt="poll" class="w-5">
+                                    </div>
+                                    <div
+                                        class="emoji transition duration-300 ease-in-out p-2 hover:bg-gray-900 rounded-full cursor-pointer">
+                                        <img src="src/images/medias/emoji.svg" alt="emoji" class="w-5">
+                                    </div>
+                                    <div
+                                        class="schedule transition duration-300 ease-in-out p-2 hover:bg-gray-900 rounded-full cursor-pointer">
+                                        <img src="src/images/medias/schedule.svg" alt="schedule" class="w-5">
+                                    </div>
+                                    <div
+                                        class="location transition duration-300 ease-in-out p-2 hover:bg-gray-900 rounded-full cursor-pointer">
+                                        <img src="src/images/medias/location.svg" alt="location" class="w-5">
+                                    </div>
                                 </div>
-                                <div
-                                    class="gif transition duration-300 ease-in-out p-2 hover:bg-gray-900 rounded-full cursor-pointer">
-                                    <img src="src/images/medias/gif.svg" alt="gif" class="w-5">
-                                </div>
-                                <div
-                                    class="poll transition duration-300 ease-in-out p-2 hover:bg-gray-900 rounded-full cursor-pointer">
-                                    <img src="src/images/medias/poll.svg" alt="poll" class="w-5">
-                                </div>
-                                <div
-                                    class="emoji transition duration-300 ease-in-out p-2 hover:bg-gray-900 rounded-full cursor-pointer">
-                                    <img src="src/images/medias/emoji.svg" alt="emoji" class="w-5">
-                                </div>
-                                <div
-                                    class="schedule transition duration-300 ease-in-out p-2 hover:bg-gray-900 rounded-full cursor-pointer">
-                                    <img src="src/images/medias/schedule.svg" alt="schedule" class="w-5">
-                                </div>
-                                <div
-                                    class="location transition duration-300 ease-in-out p-2 hover:bg-gray-900 rounded-full cursor-pointer">
-                                    <img src="src/images/medias/location.svg" alt="location" class="w-5">
+                                <div class="post-button">
+                                    <button type="submit" disabled
+                                        class="bg-[#0f4e78] px-4 py-1 rounded-full font-bold text-[#808080]">Post</button>
                                 </div>
                             </div>
-                            <div class="post-button">
-                                <button type="submit" disabled
-                                    class="bg-[#0f4e78] px-4 py-1 rounded-full font-bold text-[#808080]">Post</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="posts">
-                <div class="post p-4 flex border-b-2 border-gray-700">
-                    <div class="profile-picture size-12 rounded-full bg-slate-400 overflow-hidden">
-                        <img src="src/images/elonmusk.png" alt="Profile Picture" class="object-cover">
+                        </form>
                     </div>
-                    <div class="w-[92%] px-2">
-                        <div class="top flex justify-between">
-                            <div class="flex flex-col">
-                                <div class="username flex items-center">
-                                    <span class="font-bold">Elon Musk</span>
+                </div>
+
+                <div class="posts">
+                    <article class="post p-4 flex border-t-2 border-gray-700 cursor-pointer hover:bg-gray-950">
+                        <div class="profile-picture size-12 rounded-full overflow-hidden">
+                            <img src="src/images/elonmusk.png" alt="Profile Picture" class="object-cover">
+                        </div>
+                        <div class="w-[92%] px-2">
+                            <div class="user flex justify-between">
+                                <div class="flex items-center cursor-pointer">
+                                    <span class="font-bold hover:underline cursor-pointer">Elon Musk</span>
                                     <img src="src/images/blue-activate.svg" alt="blue-activate" class="w-5 m-[2px]">
                                     <img src="src/images/elonx.png" alt="X"
                                         class="size-4 border border-gray-600 m-[2px]">
-                                    <span class="mx-2 text-gray-600">@elonmusk · 1h</span>
+                                    <span class="mx-2 text-gray-500">@elonmusk · <span
+                                            class="hover:underline">10h</span></span>
                                 </div>
-                                <p>This is super messed up!</p>
+                                <img src="src/images/more-horiz.svg" alt="more-horiz" class="w-5 invert-[60%]">
                             </div>
-                            <div class="more-horiz">
+                            <div class="content">
+                                <div class="description">
+                                    You, the people, should decide the narrative, not 3 editors of legacy media
+                                </div>
+                                <div class="postImg py-4">
+                                    <img src="https://pbs.twimg.com/media/GdointlWoAAbdYx?format=jpg&name=large"
+                                        alt="elon Musk" class="rounded-xl">
+                                </div>
+                            </div>
+                            <div class="icons flex justify-between">
+                                <button
+                                    class="reply flex items-center justify-center h-8 text-gray-500 hover:text-blue-400">
+                                    <div
+                                        class="iconImg size-8 rounded-full hover:bg-blue-950 flex justify-center items-center">
+                                        <img src="src/images/icons/reply.svg" alt="reply" class="w-5 invert-[60%]">
+                                    </div>
+                                    <span class="text-sm">6.5K</span>
+                                </button>
+                                <button
+                                    class="repost flex items-center justify-center h-8 text-gray-500 hover:text-green-400">
+                                    <div
+                                        class="iconImg size-8 rounded-full hover:bg-green-950 flex justify-center items-center">
+                                        <img src="src/images/icons/repost.svg" alt="repost" class="w-5 invert-[60%]">
+                                    </div>
+                                    <span class="text-sm">15K</span>
+                                </button>
+                                <button
+                                    class="like flex items-center justify-center h-8 text-gray-500 hover:text-red-400">
+                                    <div
+                                        class="iconImg size-8 rounded-full hover:bg-red-950 flex justify-center items-center">
+                                        <img src="src/images/icons/like.svg" alt="like" class="w-5 invert-[60%]">
+                                    </div>
+                                    <span class="text-sm">205K</span>
+                                </button>
+                                <button
+                                    class="view flex items-center justify-center h-8 text-gray-500 hover:text-blue-400">
+                                    <div
+                                        class="iconImg size-8 rounded-full hover:bg-blue-950 flex justify-center items-center">
+                                        <img src="src/images/icons/view.svg" alt="view" class="w-5 invert-[60%]">
+                                    </div>
+                                    <span class="text-sm">23M</span>
+                                </button>
+                                <div class="flex">
+                                    <div
+                                        class="iconImg size-8 rounded-full hover:bg-blue-950 flex justify-center items-center cursor-pointer">
+                                        <img src="src/images/icons/bookmark.svg" alt="bookmark"
+                                            class="w-5 invert-[60%]">
+                                    </div>
+                                    <div
+                                        class="iconImg size-8 rounded-full hover:bg-blue-950 flex justify-center items-center cursor-pointer">
+                                        <img src="src/images/icons/share.svg" alt="share" class="w-5 invert-[60%]">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post p-4 flex border-t-2 border-gray-700 cursor-pointer hover:bg-gray-950">
+                        <div class="profile-picture size-12 rounded-full overflow-hidden">
+                            <img src="src/images/elonmusk.png" alt="Profile Picture" class="object-cover">
+                        </div>
+                        <div class="w-[92%] px-2">
+                            <div class="user flex justify-between">
+                                <div class="flex items-center cursor-pointer">
+                                    <span class="font-bold hover:underline cursor-pointer">Nature is Amazing ☘️</span>
+                                    <img src="src/images/blue-activate.svg" alt="blue-activate" class="w-5 m-[2px]">
+                                    <img src="https://pbs.twimg.com/profile_images/1813481616393502720/s09OpdGc_bigger.jpg"
+                                        alt="twimg" class="size-4 border border-gray-600 m-[2px]">
+                                    <span class="mx-2 text-gray-500">@AMAZlNGNATURE · <span class="hover:underline">Dec
+                                            1</span></span>
+                                </div>
+                                <img src="src/images/more-horiz.svg" alt="more-horiz" class="w-5 invert-[60%]">
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    Are those tree tops? 😳
+                                </div>
+                                <div class="postImg py-4">
+                                    <!-- <blockquote class="twitter-tweet rounded-2xl" data-media-max-width="560">
+                                    <a href="https://t.co/DVDX1MDk3y"></a>
+                                    <a href="https://twitter.com/AMAZlNGNATURE/status/1863015153978966281?ref_src=twsrc%5Etfw"></a>
+                                </blockquote>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+                                </div>
+                            </div>
+                            <div class="icons flex justify-between">
+                                <button
+                                    class="reply flex items-center justify-center h-8 text-gray-500 hover:text-blue-400">
+                                    <div
+                                        class="iconImg size-8 rounded-full hover:bg-blue-950 flex justify-center items-center">
+                                        <img src="src/images/icons/reply.svg" alt="reply" class="w-5 invert-[60%]">
+                                    </div>
+                                    <span class="text-sm">6.5K</span>
+                                </button>
+                                <button
+                                    class="repost flex items-center justify-center h-8 text-gray-500 hover:text-green-400">
+                                    <div
+                                        class="iconImg size-8 rounded-full hover:bg-green-950 flex justify-center items-center">
+                                        <img src="src/images/icons/repost.svg" alt="repost" class="w-5 invert-[60%]">
+                                    </div>
+                                    <span class="text-sm">15K</span>
+                                </button>
+                                <button
+                                    class="like flex items-center justify-center h-8 text-gray-500 hover:text-red-400">
+                                    <div
+                                        class="iconImg size-8 rounded-full hover:bg-red-950 flex justify-center items-center">
+                                        <img src="src/images/icons/like.svg" alt="like" class="w-5 invert-[60%]">
+                                    </div>
+                                    <span class="text-sm">205K</span>
+                                </button>
+                                <button
+                                    class="view flex items-center justify-center h-8 text-gray-500 hover:text-blue-400">
+                                    <div
+                                        class="iconImg size-8 rounded-full hover:bg-blue-950 flex justify-center items-center">
+                                        <img src="src/images/icons/view.svg" alt="view" class="w-5 invert-[60%]">
+                                    </div>
+                                    <span class="text-sm">23M</span>
+                                </button>
+                                <div class="flex">
+                                    <div
+                                        class="iconImg size-8 rounded-full hover:bg-blue-950 flex justify-center items-center cursor-pointer">
+                                        <img src="src/images/icons/bookmark.svg" alt="bookmark"
+                                            class="w-5 invert-[60%]">
+                                    </div>
+                                    <div
+                                        class="iconImg size-8 rounded-full hover:bg-blue-950 flex justify-center items-center cursor-pointer">
+                                        <img src="src/images/icons/share.svg" alt="share" class="w-5 invert-[60%]">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <div class="right w-[35%] py-1 px-8">
+                <div class="flex flex-col">
+                    <div class="search relative">
+                        <img src="src/images/nav/explore.svg" alt="search"
+                            class="w-[20px] absolute top-[15px] left-6 invert-[60%]">
+                        <input type="text"
+                            class="bg-[#202327] w-full p-3 pl-16 rounded-full focus:bg-transparent focus:outline focus:outline-2 focus:outline-blue-700"
+                            placeholder="Search">
+                    </div>
+
+                    <div
+                        class="subscribe mt-4 p-3 border border-gray-600 rounded-2xl flex flex-col gap-2 bg-[url('images/thanksgiving.png')] bg-cover">
+                        <h2 class="text-xl font-bold">40% off Premium</h2>
+                        <p>Experience the best of X this Thanksgiving.</p>
+                        <button
+                            class="w-fit bg-white text-black transition duration-300 ease-in-out hover:bg-gray-200 p-2 font-bold rounded-full">Subscribe</button>
+                    </div>
+
+                    <div class="trending mt-4 border border-gray-600 rounded-2xl flex flex-col overflow-hidden">
+                        <h2 class="text-xl font-bold px-3 py-4">What's Happening</h2>
+                        <div
+                            class="item py-3 px-4 flex justify-between items-center transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
+                            <div class="left flex flex-col">
+                                <div class="trending text-gray-500 text-sm">Gaming · Trending</div>
+                                <div class="item-name font-bold">Ubisoft</div>
+                                <div class="post text-gray-500 text-sm">1.1M posts</div>
+                            </div>
+                            <div class="right">
                                 <img src="src/images/more-horiz.svg" alt="more-horiz" class="w-5 invert-[60%]">
                             </div>
                         </div>
-                        <div class="bottom h-80 border rounded-xl mt-2 p-3"> My name is Elon Musk.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="right w-[28%] py-1 ">
-            <div class="flex flex-col">
-                <div class="search relative">
-                    <img src="src/images/explore.svg" alt="search"
-                        class="w-[20px] absolute top-[15px] left-6 invert-[60%]">
-                    <input type="text"
-                        class="bg-[#202327] w-full p-3 pl-16 rounded-full focus:bg-transparent focus:outline focus:outline-2 focus:outline-blue-700"
-                        placeholder="Search">
-                </div>
-
-                <div
-                    class="subscribe mt-4 p-3 border border-gray-600 rounded-2xl flex flex-col gap-2 bg-[url('images/thanksgiving.png')] bg-cover">
-                    <h2 class="text-xl font-bold">40% off Premium</h2>
-                    <p>Experience the best of X this Thanksgiving.</p>
-                    <button
-                        class="w-2/6 bg-white text-black transition duration-300 ease-in-out hover:bg-gray-200 p-2 font-bold rounded-full">Subscribe</button>
-                </div>
-
-                <div class="trending mt-4 border border-gray-600 rounded-2xl flex flex-col overflow-hidden">
-                    <h2 class="text-xl font-bold px-3 py-4">What's Happening</h2>
-                    <div
-                        class="item py-3 px-4 flex justify-between items-center transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
-                        <div class="left flex flex-col">
-                            <div class="trending text-gray-500 text-sm">Gaming · Trending</div>
-                            <div class="item-name font-bold">Ubisoft</div>
-                            <div class="post text-gray-500 text-sm">1.1M posts</div>
-                        </div>
-                        <div class="right">
-                            <img src="src/images/more-horiz.svg" alt="more-horiz" class="w-5 invert-[60%]">
-                        </div>
-                    </div>
-                    <div
-                        class="item py-3 px-4 flex justify-between items-center transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
-                        <div class="left flex flex-col">
-                            <div class="trending text-gray-500 text-sm">Politics · Trending</div>
-                            <div class="item-name font-bold">Congress</div>
-                            <div class="post text-gray-500 text-sm">248K posts</div>
-                        </div>
-                        <div class="right">
-                            <img src="src/images/more-horiz.svg" alt="more-horiz" class="w-5 invert-[60%]">
-                        </div>
-                    </div>
-                    <div
-                        class="item py-3 px-4 flex justify-between items-center transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
-                        <div class="left flex flex-col">
-                            <div class="trending text-gray-500 text-sm">Trending in Nepal</div>
-                            <div class="item-name font-bold">Karnali Yaks</div>
-                        </div>
-                        <div class="right">
-                            <img src="src/images/more-horiz.svg" alt="more-horiz" class="w-5 invert-[60%]">
-                        </div>
-                    </div>
-                    <div
-                        class="item py-3 px-4 flex justify-between items-center transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
-                        <div class="left flex flex-col">
-                            <div class="trending text-gray-500 text-sm">Trending in Nepal</div>
-                            <div class="item-name font-bold">Prime Minister KP Sharma Oli</div>
-                            <div class="post text-gray-500 text-sm">41K posts</div>
-                        </div>
-                        <div class="right">
-                            <img src="src/images/more-horiz.svg" alt="more-horiz" class="w-5 invert-[60%]">
-                        </div>
-                    </div>
-                    <div class="more py-3 px-4 transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
-                        <a href="#" class="text-blue-600">Show more</a>
-                    </div>
-                </div>
-
-                <div class="follow mt-4 border border-gray-600 rounded-2xl flex flex-col overflow-hidden">
-                    <h2 class="text-xl font-bold px-3 py-4">Who to follow</h2>
-                    <div
-                        class="item py-3 px-4 flex items-center justify-between transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
-                        <div class="user-info flex gap-3">
-                            <div class="profile-picture size-12 rounded-full bg-slate-400 overflow-hidden">
-                                <img src="src/images/activision.png" alt="Profile Picture" class="object-cover">
+                        <div
+                            class="item py-3 px-4 flex justify-between items-center transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
+                            <div class="left flex flex-col">
+                                <div class="trending text-gray-500 text-sm">Politics · Trending</div>
+                                <div class="item-name font-bold">Congress</div>
+                                <div class="post text-gray-500 text-sm">248K posts</div>
                             </div>
-                            <div class="username flex flex-col">
-                                <div
-                                    class="font-bold transition duration-300 ease-in-out hover:underline flex items-end">
-                                    Activision<span><img src="src/images/activate.svg" alt="activate"
-                                            class="w-5 ml-1"></span> </div>
-                                <span class="text-gray-500">@Activision</span>
+                            <div class="right">
+                                <img src="src/images/more-horiz.svg" alt="more-horiz" class="w-5 invert-[60%]">
                             </div>
                         </div>
                         <div
-                            class="follow bg-white transition duration-300 ease-in-out hover:bg-gray-200 text-black bold px-4 py-1 rounded-full">
-                            Follow
-                        </div>
-                    </div>
-                    <div
-                        class="item py-3 px-4 flex items-center justify-between transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
-                        <div class="user-info flex gap-3">
-                            <div class="profile-picture size-12 rounded-full bg-slate-400 overflow-hidden">
-                                <img src="src/images/balen.png" alt="Profile Picture" class="object-cover">
+                            class="item py-3 px-4 flex justify-between items-center transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
+                            <div class="left flex flex-col">
+                                <div class="trending text-gray-500 text-sm">Trending in Nepal</div>
+                                <div class="item-name font-bold">Karnali Yaks</div>
                             </div>
-                            <div class="username flex flex-col">
-                                <div
-                                    class="font-bold transition duration-300 ease-in-out hover:underline flex items-end">
-                                    Balen Shah<span><img src="src/images/blue-activate.svg" alt="activate"
-                                            class="w-5 ml-1"></span> </div>
-                                <span class="text-gray-500">@ShahBalen</span>
+                            <div class="right">
+                                <img src="src/images/more-horiz.svg" alt="more-horiz" class="w-5 invert-[60%]">
                             </div>
                         </div>
                         <div
-                            class="follow bg-white transition duration-300 ease-in-out hover:bg-gray-200 text-black bold px-4 py-1 rounded-full">
-                            Follow
+                            class="item py-3 px-4 flex justify-between items-center transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
+                            <div class="left flex flex-col">
+                                <div class="trending text-gray-500 text-sm">Trending in Nepal</div>
+                                <div class="item-name font-bold">Prime Minister KP Sharma Oli</div>
+                                <div class="post text-gray-500 text-sm">41K posts</div>
+                            </div>
+                            <div class="right">
+                                <img src="src/images/more-horiz.svg" alt="more-horiz" class="w-5 invert-[60%]">
+                            </div>
+                        </div>
+                        <div
+                            class="more py-3 px-4 transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
+                            <a href="#" class="text-blue-600">Show more</a>
                         </div>
                     </div>
-                    <div
-                        class="item py-3 px-4 flex items-center justify-between transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
-                        <div class="user-info flex gap-3">
-                            <div class="profile-picture size-12 rounded-full bg-slate-400 overflow-hidden">
-                                <img src="src/images/twitch.png" alt="Profile Picture" class="object-cover">
-                            </div>
-                            <div class="username flex flex-col">
-                                <div
-                                    class="font-bold transition duration-300 ease-in-out hover:underline flex items-end">
-                                    Twitch<span><img src="src/images/activate.svg" alt="activate"
-                                            class="w-5 ml-1"></span>
+
+                    <div class="follow mt-4 border border-gray-600 rounded-2xl flex flex-col overflow-hidden">
+                        <h2 class="text-xl font-bold px-3 py-4">Who to follow</h2>
+                        <div
+                            class="item py-3 px-4 flex items-center justify-between transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
+                            <div class="user-info flex gap-3">
+                                <div class="profile-picture size-12 rounded-full bg-slate-400 overflow-hidden">
+                                    <img src="src/images/activision.png" alt="Profile Picture" class="object-cover">
                                 </div>
-                                <span class="text-gray-500">@Twitch</span>
+                                <div class="username flex flex-col">
+                                    <div
+                                        class="font-bold transition duration-300 ease-in-out hover:underline flex items-end">
+                                        Activision<span><img src="src/images/activate.svg" alt="activate"
+                                                class="w-5 ml-1"></span> </div>
+                                    <span class="text-gray-500">@Activision</span>
+                                </div>
+                            </div>
+                            <div
+                                class="follow bg-white transition duration-300 ease-in-out hover:bg-gray-200 text-black bold px-4 py-1 rounded-full">
+                                Follow
                             </div>
                         </div>
                         <div
-                            class="follow bg-white transition duration-300 ease-in-out hover:bg-gray-200 text-black bold px-4 py-1 rounded-full">
-                            Follow
+                            class="item py-3 px-4 flex items-center justify-between transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
+                            <div class="user-info flex gap-3">
+                                <div class="profile-picture size-12 rounded-full bg-slate-400 overflow-hidden">
+                                    <img src="src/images/balen.png" alt="Profile Picture" class="object-cover">
+                                </div>
+                                <div class="username flex flex-col">
+                                    <div
+                                        class="font-bold transition duration-300 ease-in-out hover:underline flex items-end">
+                                        Balen Shah<span><img src="src/images/blue-activate.svg" alt="activate"
+                                                class="w-5 ml-1"></span> </div>
+                                    <span class="text-gray-500">@ShahBalen</span>
+                                </div>
+                            </div>
+                            <div
+                                class="follow bg-white transition duration-300 ease-in-out hover:bg-gray-200 text-black bold px-4 py-1 rounded-full">
+                                Follow
+                            </div>
+                        </div>
+                        <div
+                            class="item py-3 px-4 flex items-center justify-between transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
+                            <div class="user-info flex gap-3">
+                                <div class="profile-picture size-12 rounded-full bg-slate-400 overflow-hidden">
+                                    <img src="src/images/twitch.png" alt="Profile Picture" class="object-cover">
+                                </div>
+                                <div class="username flex flex-col">
+                                    <div
+                                        class="font-bold transition duration-300 ease-in-out hover:underline flex items-end">
+                                        Twitch<span><img src="src/images/activate.svg" alt="activate"
+                                                class="w-5 ml-1"></span>
+                                    </div>
+                                    <span class="text-gray-500">@Twitch</span>
+                                </div>
+                            </div>
+                            <div
+                                class="follow bg-white transition duration-300 ease-in-out hover:bg-gray-200 text-black bold px-4 py-1 rounded-full">
+                                Follow
+                            </div>
+                        </div>
+                        <div
+                            class="more py-3 px-4 transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
+                            <a href="#" class="text-blue-600">Show more</a>
                         </div>
                     </div>
-                    <div class="more py-3 px-4 transition duration-300 ease-in-out hover:bg-gray-900 cursor-pointer">
-                        <a href="#" class="text-blue-600">Show more</a>
-                    </div>
+
+                    <footer class="px-2 py-4 pb-[100px] flex flex-wrap items-end">
+                        <a href="#" class="text-gray-500 hover:underline text-sm px-2">Terms of Services</a>
+                        <a href="#" class="text-gray-500 hover:underline text-sm px-2">Privacy Policy</a>
+                        <a href="#" class="text-gray-500 hover:underline text-sm px-2">Cookie Policy</a>
+                        <a href="#" class="text-gray-500 hover:underline text-sm px-2">Accessibility</a>
+                        <a href="#" class="text-gray-500 hover:underline text-sm px-2">Ad infos</a>
+                        <a href="#" class="text-gray-500 hover:underline text-sm px-2">More ···</a>
+                        <span class="text-gray-500 text-sm px-2">© 2024 X Corp.</span>
+                    </footer>
                 </div>
-
-                <footer class="px-2 py-4 pb-[100px] flex flex-wrap items-end">
-                    <a href="#" class="text-gray-500 hover:underline text-sm px-2">Terms of Services</a>
-                    <a href="#" class="text-gray-500 hover:underline text-sm px-2">Privacy Policy</a>
-                    <a href="#" class="text-gray-500 hover:underline text-sm px-2">Cookie Policy</a>
-                    <a href="#" class="text-gray-500 hover:underline text-sm px-2">Accessibility</a>
-                    <a href="#" class="text-gray-500 hover:underline text-sm px-2">Ad infos</a>
-                    <a href="#" class="text-gray-500 hover:underline text-sm px-2">More ···</a>
-                    <span class="text-gray-500 text-sm px-2">© 2024 X Corp.</span>
-                </footer>
             </div>
-        </div>
 
-    </main>
+        </main>
+    </div>
 </body>
 
 </html>
